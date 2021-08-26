@@ -13,30 +13,12 @@ import gitlet.Utils.*;
 import static gitlet.Utils.*;
 import static java.lang.System.exit;
 
-// TODO: any imports you need here
-
-/** Represents a gitlet repository.
- *  TODO: It's a good idea to give a description here of what else this Class
- *  does at a high level.
- *
- *  @author Jae Woo Kim, Minseo Kim
- */
-
 public class Repository {
-    /**
-     * TODO: add instance variables here.
-     *
-     * List all instance variables of the Repository class here with a useful
-     * comment above them describing what that variable represents and how that
-     * variable is used. We've provided two examples for you.
-     */
 
     /** The current working directory. */
     public static final File CWD = new File(System.getProperty("user.dir"));
     /** The .gitlet directory. */
     public static final File GITLET_DIR = join(CWD, ".gitlet");
-
-//  public static final File REMOVE_MAP = join(GITLET_DIR, ".remove");
 
     public static HashMap<String, Blob> ADD_map;
     /** Remove state */
@@ -68,11 +50,6 @@ public class Repository {
         } catch (IllegalArgumentException e) {
             REMOVE_map = new HashMap<String, Blob>();
         }
-//      try {
-//          REMOVE_map = readObject(STAGE_REMOVE_DIR, REMOVE_map.getClass());
-//      } catch (IllegalArgumentException e) {
-//          REMOVE_map = new HashMap<String, Blob>();
-//      }
         try {
             HEAD = readObject(join(GITLET_DIR, ".head"), String.class);
         } catch (IllegalArgumentException e) {
