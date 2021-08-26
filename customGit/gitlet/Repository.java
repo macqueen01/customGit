@@ -84,7 +84,6 @@ public class Repository {
         gitlet.Utils.writeObject(join(GITLET_DIR, ".currbranch"), currBranch);
     }
 
-    /** TODO: fill in the rest of this class. */
     public static void init() { //init
         if (GITLET_DIR.exists()) {
             System.out.println("A Gitlet version-control system already exists in the current directory.");

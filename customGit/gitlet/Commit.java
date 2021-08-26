@@ -1,6 +1,5 @@
 package gitlet;
 
-// TODO: any imports you need here
 
 import java.io.File;
 import java.io.Serializable;
