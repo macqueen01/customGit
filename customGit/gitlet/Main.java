@@ -28,7 +28,6 @@ public class Main {
 
                 if (checkArgs(args, 1)) {
                     repo.init();
-
                 }
 
                 break;
@@ -39,8 +38,6 @@ public class Main {
                     repo.add(args[1]);
 
                 }
-
-                // TODO: handle the `add [filename]` command
 
                 break;
 

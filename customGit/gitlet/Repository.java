@@ -386,9 +386,8 @@ public class Repository {
 
 
     public void merge(String branchname) {
+        // not yet implemented
     }
-
-
 }
 
 
